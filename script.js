@@ -1,0 +1,1 @@
+const shareButton = document.getElementById('share_button');
