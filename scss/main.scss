@@ -1,0 +1,9 @@
+// Use SCSS partials
+@use 'variables';
+@use 'reset';
+@use 'screen-reader-only';
+@use 'card';
+@use 'attribution';
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');

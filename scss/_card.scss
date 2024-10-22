@@ -1,0 +1,11 @@
+.card {
+
+    &__text_container {
+        background-color: var(--white);
+    }
+
+    &__heading {
+        color: var(--very-dark-grayish-blue);
+        font: 700 1rem/1.5 Manrope, sans-serif;
+    }
+}
