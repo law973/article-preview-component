@@ -7,7 +7,15 @@
         0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
         0px 100px 80px rgba(0, 0, 0, 0.07)
     ;
+    border-radius: 10px;
     display: grid;
+    margin: 1rem;
+    max-width: 20.438rem;
+    overflow: hidden;
+
+    @media screen and (min-width: 48rem) {
+        max-width: 45.625rem;
+    }
 
     &__text_container {
         background-color: var(--white);
@@ -16,12 +24,32 @@
 
     &__heading {
         color: var(--mulled-wine);
-        font: 700 clamp(1rem, 0.912rem + 0.376vw, 1.25rem)/1.5 Manrope, sans-serif;
+        font: 700 1rem/1.5 Manrope, sans-serif;
+
+        @media screen and (min-width: 48rem) {
+            font-size: 1.25rem;
+        }
     }
 
     &__description {
         color: var(--slate-grey);
         font: 500 0.813rem/1.5 Manrope, sans-serif;
+    }
+
+    &__publication_container {
+        display: flex;
+    }
+
+    &__author_photo {
+        border-radius: 50%;
+        height: 2.5rem;
+        margin-right: 1rem;
+        width: 2.5rem;
+    }
+
+    &__author_text {
+        display: flex;
+        flex-direction: column;
     }
 
     &__author_name {
@@ -32,6 +60,27 @@
     &__publish_date {
         color: var(--rock-blue);
         font: 500 0.813rem/1.5 Manrope, sans-serif;
+    }
+
+    &__button {
+        align-items: center;
+        background-color: var(--porcelain);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+        width: 2rem;
+
+        // img {
+        //     height: 0.813rem;
+        //     width: 0.938rem;
+        // }
+
+        &:hover, &:focus {
+            background-color: var(--slate-grey);
+        }
     }
 
     &__share_text {
