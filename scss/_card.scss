@@ -14,17 +14,38 @@
     overflow: hidden;
 
     @media screen and (min-width: 48rem) {
+        grid-template-columns: 285px 1fr;
         max-width: 45.625rem;
+    }
+
+    &__image_container {
+
+        img {
+            height: 200px;
+            min-width: 100%;
+            object-fit: cover;
+            object-position: 50% 25%;
+
+            @media screen and (min-width: 48rem) {
+                height: 100%;
+                object-position: left 25%;
+            }
+        }
     }
 
     &__text_container {
         background-color: var(--white);
         padding: 36px 32px 20px;
+
+        @media screen and (min-width: 48rem) {
+            padding: 32px 40px;
+        }
     }
 
     &__heading {
         color: var(--mulled-wine);
         font: 700 1rem/1.5 Manrope, sans-serif;
+        margin-bottom: 0.75rem;
 
         @media screen and (min-width: 48rem) {
             font-size: 1.25rem;
@@ -34,6 +55,11 @@
     &__description {
         color: var(--slate-grey);
         font: 500 0.813rem/1.5 Manrope, sans-serif;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 48rem) {
+            margin-bottom: 1.25rem;
+        }
     }
 
     &__publication_container {
@@ -73,14 +99,13 @@
         justify-content: center;
         width: 2rem;
 
-        // img {
-        //     height: 0.813rem;
-        //     width: 0.938rem;
-        // }
-
         &:hover, &:focus {
             background-color: var(--slate-grey);
         }
+    }
+
+    &__share_container {
+        display: none;
     }
 
     &__share_text {
