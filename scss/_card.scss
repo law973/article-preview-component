@@ -101,6 +101,10 @@
 
         &:hover, &:focus {
             background-color: var(--slate-grey);
+
+            svg path {
+                fill: var(--white);
+            }
         }
     }
 

@@ -151,6 +151,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .card__button:hover, .card__button:focus {
   background-color: var(--slate-grey);
 }
+.card__button:hover svg path, .card__button:focus svg path {
+  fill: var(--white);
+}
 .card__share_container {
   display: none;
 }
