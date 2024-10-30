@@ -116,6 +116,10 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.25rem;
   }
 }
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
 .card__publication_container {
   display: flex;
 }
