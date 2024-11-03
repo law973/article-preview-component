@@ -12,6 +12,7 @@
     margin: 1rem;
     max-width: 20.438rem;
     overflow: hidden;
+    position: relative;
 
     @media screen and (min-width: 48rem) {
         grid-template-columns: 285px 1fr;
@@ -103,6 +104,7 @@
         height: 2rem;
         justify-content: center;
         width: 2rem;
+        z-index: 1;
 
         &:hover, &:focus {
             background-color: var(--slate-grey);
@@ -115,7 +117,21 @@
 
     &__share_container {
         background-color: var(--mulled-wine);
-        display: none;
+        bottom: 0;
+        display: flex;
+        gap: 1.313rem;
+        left: 0;
+        padding: 22px 32px;
+        position: absolute;
+        text-transform: uppercase;
+        width: 100%;
+
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (min-width: 48rem) {
+        }
     }
 
     &__share_text {
@@ -123,4 +139,9 @@
         font: 500 0.813rem/1.5 Manrope, sans-serif;
         letter-spacing: 0.417em;
     }
+}
+
+.social_links {
+    display: flex;
+    gap: 1rem;
 }
