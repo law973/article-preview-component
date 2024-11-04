@@ -36,7 +36,7 @@
 
     &__text_container {
         background-color: var(--white);
-        padding: 36px 32px 20px;
+        padding: 36px 35px 20px;
 
         @media screen and (min-width: 48rem) {
             padding: 32px 40px;
@@ -64,6 +64,7 @@
     }
 
     &__bottom {
+        align-items: center;
         display: flex;
         justify-content: space-between;
     }
@@ -106,7 +107,7 @@
         width: 2rem;
         z-index: 1;
 
-        &:hover, &:focus {
+        &.active, &:hover, &:focus {
             background-color: var(--slate-grey);
 
             svg path {
@@ -126,7 +127,7 @@
         text-transform: uppercase;
         width: 100%;
 
-        .hidden {
+        &.hidden {
             display: none;
         }
 
