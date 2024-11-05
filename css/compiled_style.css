@@ -110,7 +110,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .card__description {
   color: var(--slate-grey);
   font: 500 0.813rem/1.5 Manrope, sans-serif;
-  margin-bottom: 2rem;
 }
 @media screen and (min-width: 48rem) {
   .card__description {
@@ -121,9 +120,14 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .card__publication_container {
   display: flex;
+  margin-top: 2rem;
+}
+.card__publication_container.hidden {
+  display: none;
 }
 .card__author_photo {
   border-radius: 50%;
@@ -152,6 +156,9 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   height: 2rem;
   justify-content: center;
+  margin-top: 2rem;
+  position: absolute;
+  right: 0;
   width: 2rem;
   z-index: 1;
 }

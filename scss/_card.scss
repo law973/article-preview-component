@@ -56,7 +56,7 @@
     &__description {
         color: var(--slate-grey);
         font: 500 0.813rem/1.5 Manrope, sans-serif;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
 
         @media screen and (min-width: 48rem) {
             margin-bottom: 1.25rem;
@@ -67,10 +67,16 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     &__publication_container {
         display: flex;
+        margin-top: 2rem;
+
+        &.hidden {
+            display: none;
+        }
     }
 
     &__author_photo {
@@ -104,6 +110,9 @@
         display: flex;
         height: 2rem;
         justify-content: center;
+        margin-top: 2rem;
+        position: absolute;
+        right: 0;
         width: 2rem;
         z-index: 1;
 
