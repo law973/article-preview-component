@@ -190,6 +190,11 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 1rem;
 }
+.social_links img {
+  height: 20px;
+  object-fit: contain;
+  width: 20px;
+}
 
 .attribution {
   font: 500 0.688rem/1.5 Manrope, sans-serif;

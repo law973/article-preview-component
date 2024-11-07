@@ -152,4 +152,10 @@
 .social_links {
     display: flex;
     gap: 1rem;
+
+    img {
+        height: 20px;
+        object-fit: contain;
+        width: 20px;
+    }
 }
